@@ -1,0 +1,12 @@
+<script>
+  var nota1= Number(prompt("Digite a nota 01: "));
+  var nota2= Number(prompt("Digite a NOTA 02: "));
+  media = (nota1+nota2)/2;
+  if(media <=4){
+    alert("Reprovado");
+  }else if(media <=7){
+    alert("Exame");
+  }else{
+    alert("Aprovado");
+  }
+  </script
