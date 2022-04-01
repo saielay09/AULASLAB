@@ -1,0 +1,17 @@
+<script>
+  var codigo = prompt("digite o codigo do produto: ")
+
+  if (codigo <= 1){
+    alert ("Alimento não perecivel");
+  }else if(codigo <=4){
+    alert("Alimento perecivel");
+  }else if(codigo <=6){
+    alert("Vestuario");
+  }else if(codigo <= 7){
+    alert("Higiene Pessoal");
+  }else if(codigo <=15){
+    alert("Limpeza e utensilios Domesticos");
+  }else{
+    alert("Codigo invalido");
+  }
+  </script>
