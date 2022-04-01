@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var opcao=0;
+        alert("1 - cadastrar, 2 - alterar, 3 - consultar,99 - Sair"  );
+        console.log("1 - cadastrar");
+        console.log("2 - alterar");
+        console.log("3 - consultar");
+        console.log("99 - Sair");
+        var opcao = Number(prompt("Digite uma opção do menu: "))
+        switch(opcao){
+            case 1:
+                alert("1 - cadastrar");
+                break;
+            case 2: 
+                alert("2 - alterar");
+                break;
+            case 3: 
+                alert("3 - consultar");
+                break;
+            case 4: 
+                alert("99 - Sair");
+                break;
+            default:
+                alert("opção inválida");
+                break;
+
+        }
+    </script>
+</body>
+</html>
