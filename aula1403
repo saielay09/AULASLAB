@@ -1,0 +1,17 @@
+<script>
+
+  var bairro = prompt("por favor sem letra maiúscula ou acentuação!!!  Bairro de Entrega:");
+  var ValorEntrega
+
+  switch (bairro){
+    case "centro":
+    ValorEntrega = 5.00;
+    break;
+    case "sao joao":
+    ValorEntrega = 4.00;
+    break;
+    default:
+    ValorEntrega = 8.00;
+  }
+  alert ("O valor é de: " +ValorEntrega.toFixed(2));
+  </script>
