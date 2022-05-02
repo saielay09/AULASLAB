@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Situação do aluno</h1>
+    <p>Nome: <input type="text" id="nome"> </p>  
+    <p> Nota 1: <input type="Number" id="Num1"> </p> 
+    <p>Nota 2:<input type="Number" id="Num2"> </p> 
+    <p><input type="button" value="Exibir Média Situação" id = "btCalcular" onclick="Mostrar"></p>  
+    <h3 id="outMedia"></h2>
+    <h3 id="outResultado"></h2>
+    <script>
+        function Mostrar(){
+            var nome= document.getElementById("nome").value;
+            var Num1= Number(document.getElementById("Num1").value);
+            var Num2= Number(document.getElementById("Num2").value);
+            var outMedia = document.getElementById("outMedia")
+            var outResultado= document.getElementById("outResultado")
+
+            var Media = (Num1+Num2)/2;
+
+            outMedia.textContent="Média: "+Media;
+
+            if (Media>=7){
+                outResultado.textContent="Parabéns"+nome+", você foi aprovado"
+                outResultado.style.color = "blue";
+            }/*else if(Media>=4){
+                outResultado.textContent = nome+" você está de exame"
+                outResultado.style.color = "yellow";
+            }else{
+                outResultado.textContent= nome+ ", você está reprovado"
+    
+                outResultado.style.color = "red";
+
+            }
+
+        */}
+    </script> 
+</body>
+</html>
