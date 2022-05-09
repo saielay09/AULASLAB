@@ -20,7 +20,7 @@
         
     
       
-        for (var Resultado=0; Resultado>=0;Resultado--){
+        for (Resultado = NumSimb; Resultado>=0;Resultado--){
             
         //if((Resultado%2)==0){
            //outResultado.textContent= "*";
